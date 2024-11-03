@@ -14,11 +14,13 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Please select a quiz type" />
+        android:text="Please select a quiz topic" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_home"

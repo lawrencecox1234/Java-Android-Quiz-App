@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -125,15 +126,17 @@ public class QuizActivity extends AppCompatActivity {
 
         if (position == indexCorrect){
             edtDesription.setText("Correct answer");
+            edtDesription.setTextColor(Color.parseColor("#1bb705"));
             correctAnswers += 1;
         }
         else {
             edtDesription.setText("Incorrect answer");
+            edtDesription.setTextColor(Color.parseColor("#ff3333"));
         }
 
         AlertDialog.Builder dialogObj = new AlertDialog.Builder(QuizActivity.this)
                 .setView(viewInput)
-                .setTitle("Result");
+                .setTitle("Result:");
 
         dialogObj.setPositiveButton("Next question", new DialogInterface.OnClickListener() {
             @Override
@@ -143,8 +146,11 @@ public class QuizActivity extends AppCompatActivity {
                     questionNumber = 0;
                     Intent intent = new Intent(QuizActivity.this, ResultPage.class);
 
-                    String questionCount = String.valueOf(questionsAnswers.size());
+                    int questionCountInt = questionsAnswers.size();
+                    String questionCount = String.valueOf(questionCountInt);
+
                     String resultString = "You correctly scored " + String.valueOf(correctAnswers) + "\n Out of " + questionCount + " questions";
+
                     intent.putExtra("correct_count", resultString);
 
                     activityResultLaunch.launch(intent);
