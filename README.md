@@ -4,6 +4,8 @@
 * After selecting a category, 5 questions will be asked for this category - each with 4 options
 * A results page shows a summary of your correct answers
 
+* To complete this app I used similar styling to the "To List" project from the "The complete Java Android App development Bootcamp" Udemy course
+
 ## Running the app
 
 * Create an android studio project - I used Android studio Jellyfish for my project
