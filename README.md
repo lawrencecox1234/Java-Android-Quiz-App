@@ -5,7 +5,6 @@
 * You're able to scroll up and down the options using your fingers if options are cut off at bottom of screen
 * When the quiz is finished, a results page shows a summary of your correct answers
 
-<<<<<<< HEAD
 ### How to create and run the program
 * On Android studio, click file, new, new project
 * Click "Empty views activity"
@@ -18,11 +17,9 @@
 		* Click Finish
 		
 * Wait for the gradle process to sync up (if applicable)
-=======
 * To complete this app I used similar styling to the "To List" project from the "The complete Java Android App development Bootcamp" Udemy course
 
 ## Running the app
->>>>>>> d8552a0df15c7804c6d4bfa6ee8cd9765a68b001
 
 * Sometimes the Agp and activity version is out of date:
     * Open the gradle/libs.versions.toml file
