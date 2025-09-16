@@ -5,8 +5,16 @@
 * You're able to scroll up and down the options using your fingers if options are cut off at bottom of screen
 * When the quiz is finished, a results page shows a summary of your correct answers
 
+* To help complete this app I used similar styling to the "To List" project from the "The complete Java Android App development Bootcamp" Udemy course
+
+### Where to run the program
+
+* I'm able to run this game on both Windows 10 and 11 using "Android Studio Jellyfish | 2023.3.1"
+
 ### How to create and run the program
+
 * On Android studio, click file, new, new project
+
 * Click "Empty views activity"
     * In options menu:
         * Ensure Name is "QuizApp"
@@ -17,9 +25,6 @@
 		* Click Finish
 		
 * Wait for the gradle process to sync up (if applicable)
-* To complete this app I used similar styling to the "To List" project from the "The complete Java Android App development Bootcamp" Udemy course
-
-## Running the app
 
 * Sometimes the Agp and activity version is out of date:
     * Open the gradle/libs.versions.toml file
